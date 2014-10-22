@@ -1,8 +1,9 @@
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-#creates a list creator method
+#creates a list creator method & sort
 def list_creator(list)
-	list.each do |item|
+	sorted_list = list.sort
+	sorted_list.each do |item|
 	puts "* " + item
 	end
 end
@@ -16,11 +17,16 @@ list_creator(grocery_list)
 #find the number of items
 puts "There are #{grocery_list.length} items."
 
+#find out whether our list included bananas, puts messages accordingly
 if grocery_list.include?("bananas")
-	puts "You don't need to pick up bananas today."
-else
 	puts "You need to pick up bananas."
+else
+	puts "You don't need to pick up bananas today."
 end
+
+#put the second item on list
+puts grocery_list[1]
+
 
 
 
