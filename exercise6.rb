@@ -27,6 +27,12 @@ end
 #put the second item on list
 puts grocery_list[1]
 
+#remove salmon from list & reprint list
+
+grocery_list.delete("salmon")
+list_creator(grocery_list)
+
+
 
 
 
