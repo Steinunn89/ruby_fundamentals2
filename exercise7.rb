@@ -28,16 +28,20 @@ def increased_class (inputs)
 
 end
 
+#recall method
 increased_class(students)
 
 puts " "
 
+#delete a key-value pair
 students.delete(:cohort2)
 
+#recall method
 keys(students)
 
 puts " "
 
+#create method to increment the total students
 def total(list)
 	total_students = 0
 	list.map do |cohorts, size|
@@ -46,7 +50,7 @@ def total(list)
 	return total_students
 end
 
-
+#output the total number of students
 puts "The total number of students is: #{total(students)}."
 
 
